@@ -4,7 +4,7 @@
 
 This repository contains the CloudFormation template to create a spot request for a fleet of 2 m3.medium instances for 0.02 USD each per hour.
 
-Read more about this on our blog [our blog post](http://blog.gorillastack.com/).
+Read more about this in our blog [our blog post](http://blog.gorillastack.com/).
 
 ## Using this code
 
