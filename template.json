@@ -1,0 +1,20 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "GorillaStack CloudFormation Sample Template: Creates a spot request for fleet of 2 m3.medium instances with bid price 0.02 USD",
+  "Resources": {
+    "SpotFleet" : {
+      "Type" : "AWS::EC2::SpotFleet",
+      "Properties" : {
+        "SpotFleetRequestConfigData" : {
+          "IamFleetRole" : "arn:aws:iam::<insert account id here>:role/aws-ec2-spot-fleet-role",
+          "LaunchSpecifications" : [ {
+              "ImageId" : "ami-f2210191",
+              "InstanceType" : "m3.medium"
+          } ],
+          "SpotPrice" : "0.02",
+          "TargetCapacity" : 2
+        }
+      }
+    }
+  }
+}
