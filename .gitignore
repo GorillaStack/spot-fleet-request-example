@@ -1,0 +1,5 @@
+.jscsrc
+node_modules
+lib
+environment
+*.zip
